@@ -1,0 +1,35 @@
+
+package com.company;
+
+import java.util.Arrays;
+import java.util.Random;
+
+public class Main {
+
+    public static void main(String[] args) {
+        int[] coreData = populateCoreDataArray();
+
+        System.out.println("length of coreData array " + coreData.length);
+        //printArray(coreData, coreData.length - 1);
+
+
+// Function to print an array
+
+
+
+    static void printArray(int[] arr, int size)
+    {
+        for(int i = 0; i <= size; i++)
+            System.out.print(arr[i] + " ");
+
+        System.out.println();
+    }
+	
+	 }
+
+    public static int generateRandomNUmber(int start, int finish) {
+        Random gen = new Random();
+        int genrange = gen.nextInt((finish - start) + 1) + start;
+        return genrange;
+
+    }
